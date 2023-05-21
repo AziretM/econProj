@@ -1,26 +1,26 @@
 import React from 'react'
-
-import icon from '../assets/Frame.svg'
+// import icon from '../../assets/Frame (1).svg'
 import './Header.css'
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
     return (
         <div className="header">
             <div className="background-logo">
-                <a href='/' className='logo'></a>
+                {/* <a href='#' className='logo'></a> */}
             </div>
             <div className='container'>
                 <a className="logo_company">
-                    <img src={icon} className='icon'/>
+                    {/* <img src={icon} className='icon'/> */}
                     <h2 className='hobby'>Hobby</h2>
                 </a>
                 <div className="nav">
-                    <a href='/' className='Link'>Home</a>
-                    <a href='/about-us' className='Link'>AboutUs</a>
-                    <a href='/service' className='Link'>Service</a>
-                    <a href='/contact' className='Link'>Contact</a>
-                    <a href='/' className='login'>Login</a>
+                    <Link to='/' className='Link'>Home</Link>
+                    <Link to='/about-us' className='Link'>AboutUs</Link>
+                    <Link to='/service' className='Link'>Service</Link>
+                    <Link to='/contact' className='Link'>Contact</Link>
+                    <Link to='/' className='login'>Login</Link>
                 </div>
             </div>
         </div>
